@@ -3373,6 +3373,28 @@ MonoBehaviour:
   - {fileID: 1032815332}
   - {fileID: 2101764892}
   - {fileID: 1146795102}
+--- !u!95 &838679910
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838679897}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0bcc64f3720a5984aa97d7fdf086e8b9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &858798353
 GameObject:
   m_ObjectHideFlags: 0
@@ -7676,6 +7698,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5228334142545350563, guid: 7671d2023f0255b49994db8242c69b96, type: 3}
       insertIndex: -1
       addedObject: {fileID: 838679904}
+    - targetCorrespondingSourceObject: {fileID: 5228334142545350563, guid: 7671d2023f0255b49994db8242c69b96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 838679910}
   m_SourcePrefab: {fileID: 100100000, guid: 7671d2023f0255b49994db8242c69b96, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

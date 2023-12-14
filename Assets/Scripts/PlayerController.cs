@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
         // Load the level completion scene with time information
         SceneManager.LoadScene("LevelCompleteScene", LoadSceneMode.Single);
 
-        
+
         PlayerPrefs.SetFloat("TimeTaken", timeTaken);
     }
 }
