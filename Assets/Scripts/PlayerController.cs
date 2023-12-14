@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
         // Load the level completion scene with time information
         SceneManager.LoadScene("LevelCompleteScene", LoadSceneMode.Single);
 
-        // You can pass timeTaken to the next scene using PlayerPrefs, a GameManager script, or other methods
+        
         PlayerPrefs.SetFloat("TimeTaken", timeTaken);
     }
 }
