@@ -15,6 +15,7 @@ public class PlatformController : MonoBehaviour
         MovePlatform();
     }
 
+    // Function to move the platform horizontally within specified boundaries
     void MovePlatform()
     {
         // Calculate the new position based on the direction and speed
