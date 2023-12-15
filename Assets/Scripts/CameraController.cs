@@ -33,7 +33,7 @@ public class CameraSwitcher : MonoBehaviour
     void Update()
     {
         // Check if the Shift key is pressed
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        if (Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.C))
         {
             // Toggle the active camera and listener
             ToggleActiveCamera();
