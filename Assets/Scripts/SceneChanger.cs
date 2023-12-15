@@ -5,7 +5,7 @@ public class SceneChanger : MonoBehaviour
 {
     [SerializeField] string scene;
 
-    public void ChangeToLastScene()
+    public void ChangeScene()
     {
         SceneManager.LoadScene(scene);
     }
