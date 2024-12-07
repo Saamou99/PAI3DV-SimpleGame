@@ -31,12 +31,12 @@ public class PlayerController : MonoBehaviour
             float verticalInput = Input.GetAxis("Vertical");
 
             // Move the player based on input
-            rigibody.velocity = new Vector3(horizontalInput * movementSpeed, rigibody.velocity.y, verticalInput * movementSpeed);
+            rigibody.linearVelocity = new Vector3(horizontalInput * movementSpeed, rigibody.linearVelocity.y, verticalInput * movementSpeed);
 
             // Check for jump input and allow jumping
             if (Input.GetButtonDown("Jump") && canJump)
             {
-                rigibody.velocity = new Vector3(rigibody.velocity.x, jumpForce, rigibody.velocity.z);
+                rigibody.linearVelocity = new Vector3(rigibody.linearVelocity.x, jumpForce, rigibody.linearVelocity.z);
                 canJump = false; // Prevent jumping until the player collides with the ground again
             }
         }
@@ -71,14 +71,14 @@ public class PlayerController : MonoBehaviour
     void ResetToStartingPoint()
     {
         transform.position = startingPoint.position; // Set the player's position to the starting point
-        rigibody.velocity = Vector3.zero; // Zero out the player's velocity
+        rigibody.linearVelocity = Vector3.zero; // Zero out the player's velocity
         canJump = true; // Allow jumping again after resetting
     }
 
     // Function to complete the level
     void CompleteLevel()
     {
-        rigibody.velocity = Vector3.zero; // Stop player movement
+        rigibody.linearVelocity = Vector3.zero; // Stop player movement
 
         // Calculate time taken to complete the level
         float timeTaken = Time.time - startTime;
